@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>WebRTC</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <input type="text" id="messageInput" placeholder="Type a message">
+    <button id="sendButton">Send</button>
+    <div id="receivedMessages"></div>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+</body>
+<script src="common.js"></script>
+<script src="dataChannel.js"></script>
+<script src="initiator.js"></script>
+<script src="receiver.js"></script>
+<script>
+    initializeConnection();
+</script>
+</html>
