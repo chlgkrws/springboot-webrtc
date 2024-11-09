@@ -22,7 +22,7 @@ Peer-to-Peer 화상 통화와 실시간 채팅이 가능한 WebRTC 기반 Sample
 
 ## Configuration
 
-`common.js`에 아래 설정값을 입력하면 동작합니다:
+`common.js` 아래 설정값 입력:
 
 ```javascript
 const signalingServer = "{signaling server or 127.0.0.1:8080}";
@@ -38,6 +38,10 @@ const configuration = {
     ]
 };
 ```
+- {signaling server or 127.0.0.1:8080} - 시그널링 서버 주소 (기본값: localhost:8080)
+- {turn server url} - TURN 서버 URL 
+- {user} - TURN 서버 사용자 이름 
+- {password} - TURN 서버 비밀번호
 
 ## Architecture
 
